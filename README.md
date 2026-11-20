@@ -1,2 +1,15 @@
-# cs2-college-top
-Official website for the CS2 College TOP tournament. Team registration, tournament information, match results and standings.
+# CS2 COLLEGE TOP
+
+Сайт турнира по Counter-Strike 2 среди студентов колледжа. Статический сайт для GitHub Pages.
+
+## Публикация
+
+Загрузите `index.html`, `style.css`, `script.js` в корень репозитория и включите GitHub Pages (main / root).
+
+## Регистрация
+
+В `script.js` укажите `SCRIPT_URL` опубликованного Google Apps Script веб-приложения.
+
+**Внимание:** браузерный `fetch` к Apps Script может блокироваться CORS, даже когда данные записались в таблицу. Не открывайте регистрацию до успешного сквозного теста и проверки защиты от спама. Не используйте `mode: 'no-cors'` как подтверждение сохранения. Для надёжной эксплуатации используйте серверный endpoint с CORS и идемпотентностью либо проверенную альтернативу с подтверждением записи.
+
+Текущая версия — готовый дизайн и форма, но интеграция требует тестирования.
