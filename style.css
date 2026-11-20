@@ -24,3 +24,19 @@ html{font-size:18px}body{line-height:1.55}
 .college-info h2 span{color:#bf28e3}.college-info p{max-width:650px;color:#e2dfe5;margin:0}
 @media(max-width:900px){.college-panel{gap:24px}.nav nav{font-size:14px}}
 @media(max-width:680px){.nav-cta{font-size:14px}.brand{font-size:19px}.hero h1{font-size:23px}.hero p,.section-sub,.stage p,.rule p,.note p,.college-info p{font-size:18px}.hero-stats small{font-size:14px}.rule-grid{grid-template-columns:1fr}.rule h3{font-size:27px}.rule p{font-size:18px}.rule{min-height:unset}.form-card label:not(.agree){font-size:16px}.college-panel{grid-template-columns:1fr;padding:20px}.college-logo{min-height:190px}.college-logo img{max-width:200px}.college-section{padding-bottom:65px}.organizer-list{grid-template-columns:1fr}.organizer-list strong{font-size:19px}}
+
+/* v3 — интегрированная карточка колледжа */
+.college-section{padding:72px 0;background:#121217}
+.college-panel{display:grid;grid-template-columns:minmax(240px,340px) 1fr;gap:clamp(28px,5vw,72px);align-items:center;padding:clamp(24px,5vw,60px);background:radial-gradient(circle at 8% 20%,rgba(184,37,219,.17),transparent 55%),linear-gradient(125deg,#24202b,#191a20);border:1px solid #51415c;border-radius:18px;box-shadow:0 20px 60px #0005;position:relative;overflow:hidden}
+.college-panel:before{content:'';position:absolute;top:0;left:0;width:130px;height:5px;background:#b620db}
+.college-identity{display:flex;flex-direction:column;gap:14px;align-items:center}
+.college-logo{width:min(100%,260px);min-height:unset;aspect-ratio:1;border-radius:18px;overflow:hidden;background:#fff;padding:10px;box-shadow:0 16px 35px #0005;display:grid;place-items:center}
+.college-logo img{display:block;width:100%;max-width:none;aspect-ratio:1;object-fit:contain}
+.college-stamp{font-size:15px;font-weight:800;letter-spacing:.06em;text-align:center;color:#e9d5f1}
+.college-kicker{font-size:16px;font-weight:800;color:#d5a0e8;letter-spacing:.07em}
+.college-info h2{font:700 clamp(36px,5vw,64px)/1.08 Oswald,sans-serif;margin:16px 0 20px}
+.college-info h2 span{color:#d050f1}
+.college-info p{font-size:clamp(18px,1.7vw,21px);line-height:1.6;color:#f0eaf2;max-width:620px}
+.college-link{display:inline-flex;margin-top:26px;background:#b92bde;color:white;padding:15px 22px;border-radius:8px;font-size:17px;font-weight:800}
+.college-link:hover{background:#d449f4}
+@media(max-width:760px){.college-section{padding:45px 0}.college-panel{grid-template-columns:1fr;padding:28px 20px;text-align:center}.college-identity{gap:14px}.college-logo{width:185px}.college-info p{margin:auto}.college-link{justify-content:center}}
